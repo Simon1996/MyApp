@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        card_view:cardCornerRadius="10dp"
+        style="@style/MyCardViewStyle">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Titile"
+            android:gravity="center_vertical|center_horizontal|top"
+            android:textSize="36sp" />
+        <TextView
+            android:id="@+id/article_not_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Article.."
+            android:gravity="center_vertical|center_horizontal|bottom"
+            android:textSize="20sp" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
